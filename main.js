@@ -136,7 +136,7 @@ const NavBar = () => {
 
   console.log(information.Links)
 
-  phone = html += `<a  class="phone" id="link"    href="${information.Links['phone']}"}">`✆ (213)-458-4982 || Charlotte NC</a> `
+  phone = html += `<a  class="phone" id="link"    href="${information.Links['phone']}"}">📞 (213)-458-4982 || Charlotte NC</a> `
   html += `<a  class="email}" id="link"    href="${information.Links['email']}">📩 mmarzouq@uncc.edu</a> `
   html += `<a  class="Github" id="link"    href="${information.Links['Github']}">🐸 Github</a> `
   html += `<a  class="website" id="link"    href="${information.Links['website']}">🌎 Website</a> `
