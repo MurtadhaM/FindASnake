@@ -4,7 +4,6 @@ Author:Murtadha Marzouq
 @date: 04/13/2022
 */
 
-
 /****
  * CREATE THE COMPONENTS AND APPEND THEM TO THE DOM
  ****/
@@ -13,11 +12,11 @@ Author:Murtadha Marzouq
  * LANGUAGE COMPONENTS
  ****/
 const LanguagesComponent = () => {
-    let html = ''
-    for (i in Object.keys(information.Languages)) {
-        html += `<ul><li>${information.Languages[i]}</li></ul>`
-    }
-    return `<h3 id="Languages">  Languages:   </h3>  ${html}`
+  let html = ''
+  for (i in Object.keys(information.Languages)) {
+    html += `<ul><li>${information.Languages[i]}</li></ul>`
+  }
+  return `<h3 id="Languages">  Languages:   </h3>  ${html}`
 }
 
 /****
@@ -25,25 +24,24 @@ const LanguagesComponent = () => {
  ****/
 
 const PublicationsComponent = () => {
-    let html = ''
-    for (i in Object.keys(information.Publications)) {
-        html += `<ul><li><a id="publications"  href="${information.Publications[i].url}">${information.Publications[i].name}</a> - ${information.Publications[i].description}</li> </ul>`
-    }
-    return `<h3 id="Publications">  Publications:   </h3>  ${html}`
+  let html = ''
+  for (i in Object.keys(information.Publications)) {
+    html += `<ul><li><a id="publications"  href="${information.Publications[i].url}">${information.Publications[i].name}</a> - ${information.Publications[i].description}</li> </ul>`
+  }
+  return `<h3 id="Publications">  Publications:   </h3>  ${html}`
 }
-
 
 /****
  * EDUCATION COMPONENT
  ****/
 const EducationComponent = () => {
-    let html = ''
-    for (i in Object.keys(information.Education)) {
-        let education = information.Education[i]
-        let educationComponent = document.createElement('div')
-        educationComponent.classList.add('education')
+  let html = ''
+  for (i in Object.keys(information.Education)) {
+    let education = information.Education[i]
+    let educationComponent = document.createElement('div')
+    educationComponent.classList.add('education')
 
-        educationComponent.innerHTML += `
+    educationComponent.innerHTML += `
 
       <p id="school">${education.school}</p>
 
@@ -51,51 +49,51 @@ const EducationComponent = () => {
       <p id="year" >${education.status} in  ${education.year}</p>
       <p id="award">Awarded: ${education.awards}</p>
       `
-        html += educationComponent.outerHTML
-            //document.querySelector("#column-1").appendChild(educationComponent);
-    }
+    html += educationComponent.outerHTML
+    //document.querySelector("#column-1").appendChild(educationComponent);
+  }
 
-    return `<h3 id="Education">  Education:   </h3>  ${html}`
+  return `<h3 id="Education">  Education:   </h3>  ${html}`
 }
 
 const SkillsComponent = () => {
-    let Skills =
-        `<h3 id="Skills">Skills:</h3>` +
-        information.Skills.map((skill) => {
-            return `
+  let Skills =
+    `<h3 id="Skills">Skills:</h3>` +
+    information.Skills.map((skill) => {
+      return `
 
     <ul>
        <li id="skill">${skill}</li>
      </ul>`
-        }).join('')
+    }).join('')
 
-    return Skills
+  return Skills
 }
 
 const CertificationComponent = () => {
-    let html = ''
-    for (i in Object.keys(information.Certification)) {
-        let certification = information.Certification[i]
-        let certificationComponent = document.createElement('div')
-        certificationComponent.classList.add('certification')
+  let html = ''
+  for (i in Object.keys(information.Certification)) {
+    let certification = information.Certification[i]
+    let certificationComponent = document.createElement('div')
+    certificationComponent.classList.add('certification')
 
-        certificationComponent.innerHTML += `
+    certificationComponent.innerHTML += `
       <a href=${certification.Link} id="cert_link">  <p id="certification">${certification.Certification}</p> </a>
       <p id="date">Certification Year: ${certification.Date}</p>
       <p id="describtion"> ${certification.Describtion}</p>
       `
-        html += certificationComponent.outerHTML
-    }
-    return '<h3 id="Certification">Certification:</h3>' + html
+    html += certificationComponent.outerHTML
+  }
+  return '<h3 id="Certification">Certification:</h3>' + html
 }
 
 const ExperienceComponent = () => {
-        let html = ''
-        for (i in Object.keys(information.Experience)) {
-            let experience = information.Experience[i]
-            let experienceComponent = document.createElement('div')
-            experienceComponent.classList.add('experience')
-            experienceComponent.innerHTML += `
+  let html = ''
+  for (i in Object.keys(information.Experience)) {
+    let experience = information.Experience[i]
+    let experienceComponent = document.createElement('div')
+    experienceComponent.classList.add('experience')
+    experienceComponent.innerHTML += `
       <p id="company">${experience.company}</p>
       <p id="title">${experience.title}</p>
       <p id="location">${experience.location} | ${experience.startDate} - ${
@@ -132,21 +130,16 @@ const InterestComponent = () => {
 }
 
 const NavBar = () => {
-  let html = `<h1 id="name">${information.Name}</h1> <div id="navbar" class="links">`
+  let html = `<a  class="phone" id="link"    href="${information.Links['phone']}"}"> (213)-458-4982</a> |`
+  html += `<a  class="email}" id="link"    href="${information.Links['email']}"> mmarzouq@uncc.edu </a> |`
+  html += `<a  class="Github" id="link"    href="${information.Links['Github']}"> Github </a> |`
+  html += `<a  class="website" id="link"    href="${information.Links['website']}"> Website </a>| `
+  html += `<a  class="resume" id="link"    href="${information.Links['resume']}"> Resume</a> `
+  html += `<p  class="city" id="city"    href="${information.Links['city']}">Charlotte, NC</p> `
 
-  console.log(information.Links)
-
-  phone = html += `<a  class="phone" id="link"    href="${information.Links['phone']}"}">📞 (213)-458-4982 || Charlotte NC</a> `
-  html += `<a  class="email}" id="link"    href="${information.Links['email']}">📩 mmarzouq@uncc.edu</a> `
-  html += `<a  class="Github" id="link"    href="${information.Links['Github']}">🐸 Github</a> `
-  html += `<a  class="website" id="link"    href="${information.Links['website']}">🌎 Website</a> `
-  html += `<a  class="resume" id="link"    href="${information.Links['resume']}">📃 Resume</a> `
-
-  document.getElementById(
-    'header',
-  ).innerHTML = `${html}  </div><img src=${information.Picture} id="profile_picture" alt="Profile Picture"> `
-
-  return `${html}  </div> <img src=${information.Picture} id="profile_picture" alt="Profile Picture"> `
+  document.getElementById('header').innerHTML =
+    `${html}  ` +
+    `<img src=${information.Picture} class="profile_picture" id="profile_picture" alt="Profile Picture"> <h1 id="name">${information.Name}</h1> <div id="navbar" class="links"><divider class="divider" id="divider"></divider> ` 
 }
 /****
  * @description: This function loads all the components
@@ -179,6 +172,7 @@ const load = () => {
   let publications = document.createElement('section')
   let languages = document.createElement('section')
   // setting the sections
+
   educatoion.innerHTML = Education
   objective.innerHTML = Objective
   skills.innerHTML = Skills
@@ -188,6 +182,7 @@ const load = () => {
   publications.innerHTML = Publications
   languages.innerHTML = Languages
   // Add sections to sectionsArray
+  // Firstcolumn.innerHTML =  `<img src=${information.Picture} class="profile_picture" id="profile_picture" alt="Profile Picture">`
   Firstcolumn.appendChild(objective)
   Firstcolumn.appendChild(educatoion)
   Firstcolumn.appendChild(certification)
@@ -197,16 +192,10 @@ const load = () => {
   Secondcolumn.appendChild(publications)
   Secondcolumn.appendChild(languages)
 
-  // // Appending Components
-  // Old way of making a column
-  // document.querySelector('#column-1').appendChild(Firstcolumn)
-  // document.querySelector('#column-2').appendChild(Secondcolumn)
+  // Creating the divider
+  let page = Firstcolumn.innerHTML + '  </div> ' + Secondcolumn.outerHTML
 
- // Creating the divider
- let resumeHTML = Firstcolumn.innerHTML + ' <div id="divider" class="divider" > </div> ' + Secondcolumn.outerHTML
-
-  document.querySelector('.resumeText').innerHTML = resumeHTML
-
+  document.querySelector('.resumeText').innerHTML = page
 }
 
 var information = {}

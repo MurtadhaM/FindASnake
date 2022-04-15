@@ -9,6 +9,8 @@
 header {
     text-align: center;
     display: block;
+    margin-top: 1%;
+
 }
 
 header a:link,
@@ -21,17 +23,24 @@ header a:hover {
     color: var(--imperial-red);
 }
 
+.page {
+    width: 21cm;
+    min-height: 29.7cm;
+    padding-top: 0 !important;
+    padding: 2cm;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
 
 body {
     font-family: Sora, sans-serif;
-    
-    margin-left: 5%;
-    margin-right: 5%;
     background-color: var(--prussian-blue);
     color: var(--honeydew);
     font-size: 90%;
 }
-.resumeText{
+
+.resumeText {
     column-count: 2;
     column-gap: 1em;
     column-rule: 1px solid var(--powder-blue);
@@ -39,13 +48,23 @@ body {
 
 h1 {
     text-align: center;
+    color: var(--imperial-blue);
+    font-size: 2.5em;
+}
+
+.divider {
+    border-top: 1px solid var(--gold);
+    display: block;
+    margin: 1em 0;
 }
 
 #profile_picture {
     margin-top: 5%;
     width: 20%;
     height: 30%;
-    margin-right: 70%;
+    margin-left: 40%;
+    display: block;
+    margin-bottom: 2%;
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
     border-bottom-right-radius: 50% 50%;
@@ -85,36 +104,32 @@ section p:first-child,
     padding: 30px;
 }
 
+#city{
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--gold);
+}
 #link {
-    color: rgb(149, 59, 245);
+    text-decoration: none;
+    font-size: 17pt;
+}
+header:not(h1) {
+    color: var(--powder-blue);
+    font-size: 2em;
+}
 
+h1{
+    color: var(--powder-blue);
+    font-size: 1.2em;
 }
 
 #link:hover {
     color: rgb(255, 0, 0);
 }
+
 .column:not(:last-child) {
     border-right: 1px solid var(--honeydew);
-}
-
-@media screen and (max-width: 900px) {
-    .row {
-        flex-direction: column;
-    }
-    .column:not(:last-child) {
-        border-right: none;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    body {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    .column {
-        padding-left: 40px;
-        padding-right: 40px;
-    }
 }
 
 h3,
@@ -136,4 +151,39 @@ ul {
 .certification #date,
 .certification #describtion {
     margin-left: 30px;
+}
+
+@media screen and (max-width: 900px) {
+    .row {
+        flex-direction: column;
+      }
+    .column:not(:last-child) {
+        border-right: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+    body {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .column {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+body {
+    width: 100%;
+    min-height: 29.7cm;
+    padding-top: 0 !important;
+    padding: 2cm;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+
+}
+@media print {
+    .page {
+        size:   A4;
+        margin: 0;
+    }
 }
