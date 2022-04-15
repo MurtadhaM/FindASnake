@@ -197,10 +197,15 @@ const load = () => {
   Secondcolumn.appendChild(publications)
   Secondcolumn.appendChild(languages)
 
-  // Appending Components
-  document.querySelector('#column-1').appendChild(Firstcolumn)
-  document.querySelector('#column-2').appendChild(Secondcolumn)
+  // // Appending Components
+  // Old way of making a column
+  // document.querySelector('#column-1').appendChild(Firstcolumn)
+  // document.querySelector('#column-2').appendChild(Secondcolumn)
 
+ // Creating the divider
+ let resumeHTML = Firstcolumn.innerHTML + ' <div id="divider" class="divider" > </div> ' + Secondcolumn.outerHTML
+
+  document.querySelector('.resumeText').innerHTML = resumeHTML
 
 }
 

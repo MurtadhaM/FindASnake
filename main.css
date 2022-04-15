@@ -21,13 +21,20 @@ header a:hover {
     color: var(--imperial-red);
 }
 
+
 body {
     font-family: Sora, sans-serif;
+    
     margin-left: 5%;
     margin-right: 5%;
     background-color: var(--prussian-blue);
     color: var(--honeydew);
     font-size: 90%;
+}
+.resumeText{
+    column-count: 2;
+    column-gap: 1em;
+    column-rule: 1px solid var(--powder-blue);
 }
 
 h1 {
@@ -35,8 +42,10 @@ h1 {
 }
 
 #profile_picture {
-    width: 40%;
-    height: 40%;
+    margin-top: 5%;
+    width: 20%;
+    height: 30%;
+    margin-right: 70%;
     border-top-left-radius: 50% 50%;
     border-top-right-radius: 50% 50%;
     border-bottom-right-radius: 50% 50%;
@@ -78,8 +87,12 @@ section p:first-child,
 
 #link {
     color: rgb(149, 59, 245);
+
 }
 
+#link:hover {
+    color: rgb(255, 0, 0);
+}
 .column:not(:last-child) {
     border-right: 1px solid var(--honeydew);
 }
