@@ -172,8 +172,7 @@ ul {
     }
 }
 body {
-    width: 100%;
-    min-height: 29.7cm;
+    width: 21cm;    min-height: 29.7cm;
     padding-top: 0 !important;
     padding: 2cm;
     border: 1px #D3D3D3 solid;
