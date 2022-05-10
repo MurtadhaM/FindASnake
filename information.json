@@ -47,11 +47,16 @@
         },
 
         {
-            "Certification": "Member of The National Society of Leadership and Success ",
-            "Date": "2021",
-            "Describtion": "The Foundations of Leadership Certificate 1 badge signifies the recipient has: Demonstratedunderstanding of personal communication styles. Created a purpose and vision statement.Identified a long-term goal and created mini-milestones needed to achieve that goal.Organized tools and resources to overcome obstacles. Raised awareness of differentperspectives within teams",
-            "Link": "https://members.nsls.org/members/badges/foundation-of-leadership-1/earner/00804224-aa9b-6444-5b5c-03b23f5b8aea/share"
-        }
+          "Certification": "TestOut Security Pro Certification ",
+          "Date": "2022",
+          "Describtion": "The TestOut Security Pro Certification is a performance-based assessment for IT security professionals. The exam covers content that is taught in the TestOut Security Pro course. Students should have completed this course (or its equivalent) before attempting this exam.",
+          "Link": "https://certification.testout.com/managecert?certificateID=6-1C6-MSGBS"
+        },{
+          "Certification": "Member of The National Society of Leadership and Success ",
+          "Date": "2021",
+          "Describtion": "The Foundations of Leadership Certificate 1 badge signifies the recipient has: Demonstratedunderstanding of personal communication styles. Created a purpose and vision statement.Identified a long-term goal and created mini-milestones needed to achieve that goal.Organized tools and resources to overcome obstacles. Raised awareness of differentperspectives within teams",
+          "Link": "https://members.nsls.org/members/badges/foundation-of-leadership-1/earner/00804224-aa9b-6444-5b5c-03b23f5b8aea/share"
+      }
 
     ],
     "Experience": [{
