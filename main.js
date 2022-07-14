@@ -133,7 +133,7 @@ const NavBar = () => {
   let html = `<a  class="phone" id="link"    href="${information.Links['phone']}"}"> (213)-458-4982</a> |`
   html += `<a  class="email}" id="link"    href="${information.Links['email']}"> mmarzouq@uncc.edu </a> |`
   html += `<a  class="Github" id="link"    href="${information.Links['Github']}"> Github </a> |`
-  html += `<a  class="website" id="link"    href="${information.Links['website']}"> Website </a>| `
+  html += `<a  class="website" id="link"    href="${information.Links['website']}"> LinkedIn </a>| `
   html += `<a  class="resume" id="link"    href="${information.Links['resume']}"> Resume</a> `
   html += `<p  class="city" id="city"    href="${information.Links['city']}">Charlotte, NC</p> `
 
