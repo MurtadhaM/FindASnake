@@ -193,8 +193,9 @@ const load = () => {
   Secondcolumn.appendChild(languages)
 
   // Creating the divider
-  let page = Firstcolumn.innerHTML + '  </div> ' + Secondcolumn.outerHTML
 
+  let page = Firstcolumn.innerHTML + '  </div> ' + Secondcolumn.outerHTML 
+  
   document.querySelector('.resumeText').innerHTML = page
 }
 
