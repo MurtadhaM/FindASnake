@@ -44,7 +44,7 @@ var hash = sum(prefix +'-'+serial)
 // adding the first 3 characters of the hash to the end of the hash
 hash += sum(prefix +'-'+serial).substring(0,3)
 
-let hostname =  prefix + '-' + hash;
+let hostname =  prefix + '-' + hash.toUpperCase();
 
 
 console.log(hostname)
