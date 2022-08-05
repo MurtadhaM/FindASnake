@@ -98,3 +98,8 @@ body {
   background: rgb(0,117,185);
   background: radial-gradient(circle, rgba(0,117,185,1) 0%, rgba(0,44,93,1) 100%);
 }
+
+
+.dropdown{
+  margin:0 !important;width:100%
+}
