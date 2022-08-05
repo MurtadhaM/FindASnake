@@ -5,7 +5,15 @@ a:hover, a:focus {
 a {
   outline: none;
 }
-
+ 
+        select#dropdown {
+    margin-left: 35%;
+}
+        
+        .lgp-hd {
+    text-align: center;
+}
+    
 a:hover, a:focus {
   outline: none;
 }
