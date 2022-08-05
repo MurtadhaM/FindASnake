@@ -1,115 +1,93 @@
-body{
-  background-color: #0cbaba;
-background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-color:white;
+
+a:hover, a:focus {
+  text-decoration: none;
 }
-#generator_form {
-    background-color: #f2f2f2;
+
+a {
+  outline: none;
+}
+
+a:hover, a:focus {
+  outline: none;
+}
+
+.login-cont {
+  padding: 100px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.form-control.input-lg.lg-frc {
+  border-radius: 0rem;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  font-size: 14px;
+  padding: 5px 8px;
+  color: #fff;
+}
+
+.form-control.input-lg.lg-frc:focus {
+  border-color: #565656;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.login-col {
+  padding: 30px;
+  background-color: rgba(0,0,0,0.2);
+  border: 1px solid rgba(204,204,204,0.36);
+  padding-top: 15px;
+}
+
+.login-btn {
+  border-radius: 0rem;
+  background-color: transparent;
+  background-image: none;
+  text-shadow: none;
+  color: #fff;
+  padding: 10px 40px;
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .login-cont {
+    margin-top: 150px;
     padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-select#dropdown {
-    margin-left: 35%;
-}
-#generator_form serial,
-#dropdown {
-    margin-bottom: 10px;
-    width: 100%;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-    color: orangered;
-    text-align: center;
-    align-self: center;
-}
-input {
-
-   width: 100%;
-   text-align: center;
-}
-#generator_form button {
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 100%;
-    color: #6569a0;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    border: 1px solid #6569a0;
-
+  }
 }
 
-#output {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: tomato;
-}
-.table th:hover{
-       scale: 1.05;
-    
-    
-        color: red !important;;
-    
-    
-}
- tr td  {
-     font-size: 14pt;
-
-     
-     
-    
+.form-control:focus {
+  border-color: #25476a;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-*{
-    text-align: center;
-    align-self: center;
-    font-size: 14pt;
-    
-}
-tr td {
-    
-    
-    text-align: center;
-    
-     background-color: white;
-    color: purple;
-}
-.td{
-    border-color: var(--bs-red);color: var(--bs-orange);text-align: center;
-   } 
-.table-row th {
-         font-size: 14pt;
-align-content: center;
-    
-    margin: 0px;
-    padding: 9px;
-    
-    margin-left: 10%;
-    
-     background-color: black;
-
-    color: red ;;
+.lgp-hd {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 60px;
 }
 
-#table-Make, #table-Hostname,#table-Make,#table-Model,#table-Serial ,#table-Prefix{
-    
-    
-    text-align: center;
-        
-    background-color: yellow;
-    border: purple;
-    
-    border-style: solid;
-    border-width: 1px;
-    
-    
-    
-    color: teal;
+.login-form {
+  border: 1px solid rgba(204,204,204,0.36);
+  padding: 20px;
+  background-color: rgba(0,0,0,0.32);
 }
 
+.icon.ion-lock-combination {
+  color: #fff;
+  font-size: 70px;
+  margin-bottom: 10px;
+}
 
+body {
+  background: rgb(0,117,185);
+  background: radial-gradient(circle, rgba(0,117,185,1) 0%, rgba(0,44,93,1) 100%);
+}
