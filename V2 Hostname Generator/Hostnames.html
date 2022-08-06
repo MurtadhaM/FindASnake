@@ -1,69 +1,70 @@
-<html lang="en">
+<html data-lt-installed="true" lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/css/bootstrap.min.css">
 
-<head meta="charset=utf-8">
-
-    <title>The Amazing Hostname Generator </title>
-    <meta name="description" content="The Amazing Hostname Generator">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="http://www.findasnake.com/V2%20Hostname%20Generator/assets/css/Login-Form-blue-Gradient-1.css">    <script defer src="Hostnames.js"></script>
-    <link rel="stylesheet" href="Hostnames.css">
-    <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/js/bulma-extensions.min.js"></script>
-</head>
-
-
-<body onload="populateDropdown()">
-
-    <div action="#Generated" id="generator_form">
-
-        <!-- Drop Down-->
-        <select id="dropdown" name="dropdown">
-            <option value="">Select a City</option>
-        </select>
-        <input type="text" id="serial" value="" placeholder="Input Serial Number">
-        <br>
-        <input type="text" id="make" name="make" placeholder="Make">
-        <br><input type="text" id="model" name="model" placeholder="Model">
-       <br>
-        <button onclick="generateRandomHex()">Generate</button>
-        <br>    
-
-
-        <button class="button is-info" onclick="downloadCSV()">Export to CSV</button>
-        <br>
-    </div>
-    <p id="output" class="output"> </p>
-
-
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="./Hostnames.css">
+ 
+    <script defer="" src="./Hostnames.js"></script>
+<style> 
      
-    <table id="hostnames-table" class="table">
-          
-        <tr class="table-row" id="table-row">
+    </style><script src="https://cdn.jsdelivr.net/npm/hash-sum@2.0.0/hash-sum.min.js"></script></head>
+    
 
-        
-            <th id="table-Prefix">Prefix</th>
-            <th id="table-Serial">Serial</th>
-            <th id="table-Make">Make</th>
-            <th id="table-Model">Model</th>
-            <th id="table-Hostname">Hostname</th> 
-            
+<body>
+    <section>
+        <div class="lgp-hd">
+            <h2><strong>welcome to Hostname Generator</strong></h2>
+            <h5><strong>Fill In the Required Fields</strong></h5>
+        </div>
+        <div class="row">
+            <div class="col-10 col-sm-6 col-md-4 col-lg-4 offset-1 offset-sm-3 offset-md-4 offset-lg-4 login-col"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" style="width: 154px;height: 100px;border-color: rgb(29,93,156);margin-left:35%;">
+                    <path d="M9.75 17L9 20L8 21H16L15 20L14.25 17M3 13H21M5 17H19C20.1046 17 21 16.1046 21 15V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V15C3 16.1046 3.89543 17 5 17Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <div class="Hostname-Form login-form">
+                    <select id="dropdown" class="dropdown" name="dropdown">
+                        <option value="">Select a Location</option>
+                    <option>ACU</option><option>ALB</option><option>ALX</option><option>ARL</option><option>ARV</option><option>AZR</option><option>BKH</option><option>BLK</option><option>BOL</option><option>BVL</option><option>CIN</option><option>CLT</option><option>DRO</option><option>DUP</option><option>DUR</option><option>EGL</option><option>ERL</option><option>ESL</option><option>FON</option><option>FTP</option><option>GAL</option><option>HOU</option><option>HST</option><option>LAK</option><option>LOU</option><option>MBO</option><option>MIL</option><option>MST</option><option>NAV</option><option>NLB</option><option>NOX</option><option>ONT</option><option>PHO</option><option>POM</option><option>RAV</option><option>RMH</option><option>ROS</option><option>SAL</option><option>SAT</option><option>SUN</option><option>SVL</option><option>TFT</option><option>TIJ</option><option>TYL</option><option>WIL</option></select>
+
+
+                    <div class="form-group mb-3"><input class="form-control form-control-sm lg-frc serial" id="serial" type="text" required="" placeholder="Enter Serial Number" style="margin-top: 10px;"></div>
+                    <input class="form-control form-control-sm lg-frc " id="make" type="text" required="" placeholder="Enter Manufacturer" name="Manufacturer" style="margin-top: 10px;">
+                    <div class="form-group mb-3"><input class="form-control form-control-sm lg-frc" id="model" type="text" required="" placeholder="Enter Model" style="margin-top: 10px;"></div>
+                    <div class="form-group mb-3 " style="margin-left: 20%;"><button class="btn btn-light btn-lg login-btn" type="submit" style="margin-top: 10px;" onclick="generateRandomHex()">
+                            <strong>Generate</strong></button><button class="btn btn-light btn-lg login-btn" type="button" style="margin-top: 10px;" onclick="downloadCSV()"><strong>Export</strong></button></div>
+                </div>
+            </div>
+        </div>
+    </section><!-- End: Hostname-Form-blue-Gradient -->
+    <div class="table-responsive">
+        <table class="table" id="hostnames-table">
+            <thead>
+                <tr>
+                    <th style="background: var(--bs-warning);text-align: center;">Location</th>
+                    <th style="background: var(--bs-warning);text-align: center;">Serial Number</th>
+                    <th style="background: var(--bs-warning);text-align: center;">Manufacturer</th>
+                    <th style="background: var(--bs-warning);text-align: center;">Model</th>
+                    <th style="background: var(--bs-yellow);text-align: center;">Hostname</th>
+                </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
         </table>
 
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/Sample---How-to-change-text-based-on-dropdown.js"></script>
 
 
-
-
-
-        </h1>
-
+    <footer class="footer" id="footer">
         
-</body>
+    <p>© 2022 www.findasnake.com</p>
+    <p>Authors: Murtadha Marzouq &amp; Michael Rumbolo</p>
+
+    </footer>
 
 
-</html>
+
+
+<a download="hosts.csv" href="blob:http://www.findasnake.com/ce3e81e3-64b3-44eb-acaa-68f929470087" style="display: none;"></a></body></html>

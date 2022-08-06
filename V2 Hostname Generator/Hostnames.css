@@ -1,4 +1,11 @@
- 
+#footer{
+  margin-top: 100px;
+  margin-bottom: 0;
+  text-align: center;
+} 
+
+
+
         select#dropdown {
     margin-left: 35%;
 }
