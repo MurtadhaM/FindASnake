@@ -1,0 +1,7 @@
+Send-MailMessage –From relaycreds@wastequip.com –To mmarzouq@wastequip.com –Subject "Test Emai" –Body "Test SMTP Relay Service" -SmtpServer WQSMTP1.wastequip.com  -UseSsl
+PS C:\Users\_mmarzouq>
+
+
+PS C:\Users\_mmarzouq>  Send-MailMessage –From relaycreds@wastequip.com –To mmarzouq@wastequip.com –Subject "Test Emai"
+–Body "Test SMTP Relay Service" -SmtpServer WQIIS.wastequip.com -UseSsl
+PS C:\Users\_mmarzouq>
