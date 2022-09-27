@@ -99,20 +99,7 @@
                 "Maintain Hardware equipment and software for the course (i.e. Switches, Servers, Firewalls, Routers)"
             ]
         }
-        {
-            "company": "Wastequip LLC",
-            "title": "Systems Administrator",
-            "location": "Charlotte, NC",
-            "startDate": "August 2022",
-            "endDate": "Current ",
-            "Responsibilities": [
-                "Design & implement IT Infrastructure projects in 4 key areas: Networking, Virtualization, Automation, and Cloud Computing",
-                "Support 25000 users and provision IT assets (IP Phones, Computers, Software stack)",
-                "Create and maintain Azure Cloud Infrastructure (Creating Enterprise Applications, Adding new Policies in Endpoint, addressing security alerts on defender and onboard servers to Sentinal",
-                "Install, update, and maintain Fortinet, Cisco, and Sophos network equipment",
-                "Install, update, and maintain ESXI server using vSphere and its appliance."
-            ]
-        }
+
 
 
     ],

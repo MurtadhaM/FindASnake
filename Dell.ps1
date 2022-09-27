@@ -6,8 +6,8 @@ Invoke-WebRequest -Uri "https://github.com/MurtadhaM/FindASnake/raw/main/Command
 
 # Installing the files silently
 cmd.exe /c  "c:\windows\temp\SupportAssist.exe /s /v /S" 
-& cmd.exe /c  "c:\windows\temp\DBUTIL.exe /f /s"
-& cmd.exe /c "c:\windows\temp\Command.exe /f /s" 
+cmd.exe /c  "c:\windows\temp\DBUTIL.exe /f /s"
+cmd.exe /c "c:\windows\temp\Command.exe /f /s" 
 
 
 
