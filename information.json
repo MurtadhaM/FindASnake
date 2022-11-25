@@ -11,13 +11,13 @@
     "Objective": "Seeking an IT management and Administration role involving, networking, security, and scripting.",
     "Education": [
 
-        {
-            "school": "Central Piedmont Community College",
-            "degree": "Associates of Science",
-            "major": "Art and Design",
-            "status": "Graduated",
-            "year": "2014",
-            "awards": "Graduated on the Dean’s List"
+        {  "school": "University Of North Carolina Charlotte",
+        "degree": "Masters of Science",
+        "major": "Software, Systems, and Technology",
+
+        "status": "Enrolled",
+        "year": "2022",
+        "awards": "Admitted to the program by academic merit"
         },
 
         {
@@ -30,13 +30,12 @@
             "awards": "Graduated Magna Cum Laude"
         },
         {
-            "school": "University Of North Carolina Charlotte",
-            "degree": "Masters of Science",
-            "major": "Software, Systems, and Technology",
-
-            "status": "Enrolled",
-            "year": "2022",
-            "awards": "Admitted to the program by academic merit"
+            "school": "Central Piedmont Community College",
+            "degree": "Associates of Science",
+            "major": "Art and Design",
+            "status": "Graduated",
+            "year": "2014",
+            "awards": "Graduated on the Dean’s List"
         }
     ],
     "Certification": [{
@@ -59,18 +58,24 @@
       }
 
     ],
-    "Experience": [{
-            "company": "Cellular Tech",
-            "title": "Cellphone and Computer technician (Hardware/Software)",
-            "startDate": "January 2011",
-            "endDate": "February 2018",
-            "Responsibilities": [
-                "Analyze Software/Hardware Problems and suggest solutions to address the problems.",
-                "Handle Sensitive Personal Information and safeguard computers and cellphone from future intrusion",
-                "Install and maintain software and hardware",
-                "Install and Maintain Operating system on Symbian, Windows, Linux, IOS (Apple), and Android OS."
-            ]
-        },
+    "Experience": [       {
+        "company": "Wastequip LLC",
+        "title": "Systems Administrator",
+        "location": "Charlotte, NC",
+        "startDate": "August 2022",
+        "endDate": "Current ",
+        "Responsibilities": [
+            "Design & implement IT Infrastructure projects in 4 key areas: Networking, Virtualization, Automation, and Cloud Computing",
+            "Support 2500 users and provision IT assets (IP Phones, Computers, Software stack)",
+            "Level 3 Incident management (Analysis and resolution). Reading, analyzing and resolving log and user created incidents" ,
+            "Create and maintain Azure Cloud Infrastructure (Creating Enterprise Applications, Adding new Policies in Endpoint, addressing security alerts on defender and onboard servers to Sentinal",
+            "Install, update, and maintain Fortinet, Cisco, and Sophos network equipment",
+            "Install, update, and maintain ESXI server using vSphere and its appliance.",
+            "Server management and automation PowerShell scripting to query, update, and manage servers with ActiveDirectory, and PS-Remoting (Microsoft.Powershell.Core) Modules and COM Objects to control Win32 Applications"
+            
+
+        ]
+    },
         {
 
             "company": "CGNET on-site for The Duke Endowment",
@@ -85,7 +90,6 @@
                 "Work as a project resource as required to deploy new systems, upgrades, or technologies within the office which may include personal technology and IT infrastructure"
             ]
         },
-
         {
             "company": "The University of North Carolina Charlotte",
             "title": "Teacher Assistant (Computer Infrastructure ITIS 2110/3110)",
@@ -98,19 +102,16 @@
                 "Explain the course concepts and provide assistance to students in the course",
                 "Maintain Hardware equipment and software for the course (i.e. Switches, Servers, Firewalls, Routers)"
             ]
-        },
-        {
-            "company": "Wastequip LLC",
-            "title": "Systems Administrator",
-            "location": "Charlotte, NC",
-            "startDate": "August 2022",
-            "endDate": "Current ",
+        },{
+            "company": "Cellular Tech",
+            "title": "Cellphone and Computer technician (Hardware/Software)",
+            "startDate": "January 2011",
+            "endDate": "February 2018",
             "Responsibilities": [
-                "Design & implement IT Infrastructure projects in 4 key areas: Networking, Virtualization, Automation, and Cloud Computing",
-                "Support 25000 users and provision IT assets (IP Phones, Computers, Software stack)",
-                "Create and maintain Azure Cloud Infrastructure (Creating Enterprise Applications, Adding new Policies in Endpoint, addressing security alerts on defender and onboard servers to Sentinal",
-                "Install, update, and maintain Fortinet, Cisco, and Sophos network equipment",
-                "Install, update, and maintain ESXI server using vSphere and its appliance."
+                "Analyze Software/Hardware Problems and suggest solutions to address the problems.",
+                "Handle Sensitive Personal Information and safeguard computers and cellphone from future intrusion",
+                "Install and maintain software and hardware",
+                "Install and Maintain Operating system on Symbian, Windows, Linux, IOS (Apple), and Android OS."
             ]
         }
 
@@ -126,6 +127,8 @@
     ],
 
     "Skills": ["Linux Terminal/Bash scripting",
+    "Azure & Local Active directory and domain administrations (Services, SCCM, Endpoint, Group Policy, and Configuration Profiles)    ",
+    
         "SQL Management (MSSQL, MYSQL, PosgreSQL, and ORACLE)",
         "Administration for Microsoft Office 360 Suite (Exchange, Outlook, and OneNote, and SharePoint)",
         "Penetration Testing (Metasploit Framework, Nmap, and Wireshark)",
