@@ -42,7 +42,8 @@
 
       // Making a request to Teams Webhook
       const teams_Webhook =
-        'https://mmarzou0hotmail.webhook.office.com/webhookb2/d435f58f-68e8-4f75-b94b-0b3d4d7191cc@711e97a5-5f2d-403c-befe-be4c0f6087f1/IncomingWebhook/fb5cdd75c0254c1f802070945e13195c/1c74fa4c-05d9-4b01-ad8b-299a94f521a7'
+        
+'https://mmarzou0hotmail.webhook.office.com/webhookb2/d435f58f-68e8-4f75-b94b-0b3d4d7191cc@711e97a5-5f2d-403c-befe-be4c0f6087f1/IncomingWebhook/fb5cdd75c0254c1f802070945e13195c/1c74fa4c-05d9-4b01-ad8b-299a94f521a7'
 
       async function get_Request(url) {
         const response = await fetch(url).then(res => {
@@ -105,7 +106,7 @@
                   value: ResultObject.ip
                 },
                 {
-                  name: ResultObject.headers.get('content-type'),
+                  name: "URL of the API",
                   value: ResultObject.url
                 },
                 {
@@ -182,6 +183,7 @@ $(document).ready(function () {
         
         
 })
+
 
 
 
