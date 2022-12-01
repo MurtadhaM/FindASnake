@@ -1,0 +1,104 @@
+
+
+<html>
+    <head>
+        <title>Track</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <script>
+       
+
+       
+        
+        const getIP = () => {
+            url = "https://api.ipify.org/?format=json";   
+        let $ = jQuery;
+            $.ajax({
+                url: url,
+                type: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                    ,
+                    "Access-Control-Allow-Origin": "*" ,
+                },
+                crossDomain: true,
+                dataType: "json",
+                success: function(data) {
+                    console.log(data);
+                    console.log(data.ip);
+
+                    return data.ip;
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+                
+        
+            });
+     
+        }
+        
+    
+    const trackIP = () => {
+        url = "https://mmarzou0hotmail.webhook.office.com/webhookb2/d435f58f-68e8-4f75-b94b-0b3d4d7191cc@711e97a5-5f2d-403c-befe-be4c0f6087f1/IncomingWebhook/b023b2c6180445cdac17beee50ed9ca3/1c74fa4c-05d9-4b01-ad8b-299a94f521a7";   
+       let $ = jQuery;
+        $.ajax({
+            url: url,
+            type: "POST",
+            headers: {
+                "Content-Type": "application/json"
+                ,                
+            },
+            crossDomain: true,
+            dataType: "json",
+            success: function(data) {
+                console.log(data);
+                console.log(data.ip);
+
+                return data.ip;
+            },
+            error: function(error) {
+                console.log(error);
+            }
+            
+        });
+    };
+    
+    (function() {  {
+
+console.log("ready state changed");
+ 
+console.log(trackIP());
+console.log(getIP());
+
+}
+ fetch("https://api.ipify.org/?format=json", {
+    "credentials": "omit",
+    "headers": {
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:107.0) Gecko/20100101 Firefox/107.0",
+        "Accept": "*/*",
+        "Accept-Language": "en-US,en;q=0.5",
+        "Sec-Fetch-Dest": "empty",
+        "Sec-Fetch-Mode": "no-cors",
+        "Sec-Fetch-Site": "cross-site",
+        "Access-Control-Allow-Origin": "*",
+        "Pragma": "no-cache",
+        "Cache-Control": "no-cache"
+    },
+    "referrer": "http://localhost:3000/",
+    "method": "GET",
+    "mode": "cors"
+});
+
+
+})();
+
+
+trackIP();
+
+getIP();
+
+
+        </script>
+        
+</html>
