@@ -19,7 +19,11 @@ echo "Installing NGINX"
  firewall-cmd --reload
  cd /usr/share/nginx/html
 
-cat > test.html << EOL
+
+public_ip = $(curl https://api.ipify.org)
+echo "Your public IP is: $public_ip"
+
+cat > index.html << EOL
 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,11 +42,11 @@ cat > test.html << EOL
 
     <script>
 
-        fetch('http://YOU-IP-ADDRESS:3000/json')
+        fetch('http://$public_ip:3000/json')
             .then(response => response.json())
             .then(data => console.log(data));
 
-        fetch('http://YOU-IP-ADDRESS:3000/text')
+        fetch('http://$public_ip:3000/text')
             .then(response => response.text())
             .then(data => console.log(data));
 
