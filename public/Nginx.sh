@@ -23,7 +23,7 @@ echo "Installing NGINX"
 public_ip=$(curl https://api.ipify.org)
 echo "Your public IP is: $public_ip"
 
-cat > index.html << EOL
+cat > test.html << EOL
 
 <!DOCTYPE html>
 <html lang="en">
