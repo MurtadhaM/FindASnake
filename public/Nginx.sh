@@ -20,7 +20,7 @@ echo "Installing NGINX"
  cd /usr/share/nginx/html
 
 
-public_ip = $(curl https://api.ipify.org)
+public_ip=$(curl https://api.ipify.org)
 echo "Your public IP is: $public_ip"
 
 cat > index.html << EOL
