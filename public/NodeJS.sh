@@ -34,9 +34,10 @@ app.listen(port, () => {
 
 EOL
 #Type the code shown in this slide
- npm install express
- npm install -g pm2
- pm2 start server.js
+
+npm install express
+npm install -g pm2
+pm2 start server.js
 
 
 
