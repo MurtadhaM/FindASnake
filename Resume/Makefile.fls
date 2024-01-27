@@ -1,0 +1,6 @@
+PWD /Users/dash/Github/findasnake/Resume
+INPUT /usr/local/texlive/2023/texmf.cnf
+INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/latex.fmt
+INPUT Makefile
+OUTPUT Makefile.log
