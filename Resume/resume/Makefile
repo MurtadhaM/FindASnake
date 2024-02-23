@@ -3,9 +3,9 @@ TEXSRC = $(wildcard ./*.tex)
 all: main clean rename
 
 rename:
-	mv main.pdf  MurtadhaMarzouq-Resume.pdf
+		move main.pdf  MurtadhaMarzouq-Resume.pdf"
 main: $(TEXSRC)
-#	use pdflatex to compile the tex file
-	pdflatex main
+		pdflatex main.tex
 clean: 
-	\rm -f *.dvi *.aux *.ps *~ *.log *.blg *.bbl *.out *.fls *.fdb_latexmk *.synctex.gz
+		echo "Cleaning up..."
+		del "*.aux" "*.log" "*.out" "*.toc"  
